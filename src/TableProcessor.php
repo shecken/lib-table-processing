@@ -13,10 +13,7 @@ class TableProcessor
     const ACTION_SAVE = "save";
     const ACTION_DELETE = "delete";
 
-    /**
-     * @var Backend
-     */
-    protected $backend;
+    protected Backend $backend;
 
     public function __construct(Backend $backend)
     {

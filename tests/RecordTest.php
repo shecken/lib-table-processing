@@ -77,7 +77,7 @@ class RecordTest extends TestCase
     /**
      * @depends testCreate
      */
-    public function testErrorsByComponent(Record $record)
+    public function testErrorsByComponent(Record $record) : void
     {
         $error = new Error("component", "this is a fault");
         $error2 = new Error("component", "this is a fault again");
@@ -89,7 +89,7 @@ class RecordTest extends TestCase
                          ->withError($error4);
 
         $filtered_errors = $record->getErrorsByComponent("component");
-        $this->assertEquals(2, count($filtered_errors));
+        $this->assertCount(2, $filtered_errors);
         $this->assertSame([$error, $error2], $filtered_errors);
     }
 }

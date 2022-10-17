@@ -1,6 +1,5 @@
 {
     "name": "conceptsandtraining/lib-table-processing",
-    "version": "0.1.0",
     "description": "Provides an easy way to handle table queries.",
     "type": "library",
     "license": "GPL-3.0",

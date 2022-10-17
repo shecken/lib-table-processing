@@ -6,7 +6,7 @@ namespace CaT\Libs\TableProcessing;
 
 /**
  * Backend interface for table processing.
- * Defines options how to act with table elements
+ * Define options how to act with table elements
  * @author Stefan Hecken    <stefan.hecken@concepts-and-training.de>
  */
 interface Backend

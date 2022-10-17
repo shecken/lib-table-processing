@@ -6,10 +6,7 @@ namespace CaT\Libs\TableProcessing;
 
 class Message
 {
-    /**
-     * @var string
-     */
-    protected $message;
+    protected string $message;
 
     public function __construct(string $message)
     {

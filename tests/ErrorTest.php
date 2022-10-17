@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class ErrorTest extends TestCase
 {
-    public function testCreate()
+    public function testCreate() : void
     {
         $error = new Error("component", "this is a vault");
         $this->assertEquals("component", $error->getComponent());

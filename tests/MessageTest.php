@@ -8,7 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class MessageTest extends TestCase
 {
-    public function testCreate()
+    public function testCreate() : void
     {
         $error = new Message("this is a message");
         $this->assertEquals("this is a message", $error->getMessage());

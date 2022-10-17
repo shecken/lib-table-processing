@@ -6,15 +6,8 @@ namespace CaT\Libs\TableProcessing;
 
 class Error
 {
-    /**
-     * @var string
-     */
-    protected $component;
-
-    /**
-     * @var string
-     */
-    protected $message;
+    protected string $component;
+    protected string $message;
 
     public function __construct(string $component, string $message)
     {

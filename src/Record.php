@@ -10,25 +10,10 @@ namespace CaT\Libs\TableProcessing;
  */
 class Record
 {
-    /**
-     * @var ProcessObject
-     */
-    protected $object;
-
-    /**
-     * @var Error[]
-     */
-    protected $errors;
-
-    /**
-     * @var bool
-     */
-    protected $delete;
-
-    /**
-     * @var Message[]
-     */
-    protected $messages;
+    protected ProcessObject $object;
+    protected array $errors;
+    protected bool $delete;
+    protected array $messages;
 
     public function __construct(ProcessObject $object)
     {
